@@ -1,0 +1,65 @@
+S -> aSa   | a
+S -> bSb
+S -> Mw | epsilon
+M -> rta | T
+M -> pqr 
+T -> s 
+
+A -> B
+B -> CA
+C -> s | A
+
+S -> AS | b
+A -> SA | a
+
+A -> Sa
+S -> g | Mb | S | A
+M -> y
+S -> t
+
+A = a
+B = b, epsilon
+C = a
+
+C = {$}
+A = {b, epsilon}
+B = {}
+
+C -> AB | Bp
+A -> a
+B -> b | epsilon
+
+C -> AB
+A -> a
+B -> a | epsilon
+B -> Ba
+A -> AC
+
+S -> 0S1 | 01
+S -> 1S0 | 10S 
+
+E -> TX
+T -> (E) | aY
+X -> +E | epsilon
+Y -> *T | epsilon
+
+A -> aS
+S -> Ab
+A -> bG
+G -> t
+A -> G
+
+Ambigua
+E -> T + E | T
+T -> a * T | a | (E)
+
+S -> aSb | c
+C -> AB
+A -> a
+B -> a
+
+
+
+aab 
+ab 
+ba 
